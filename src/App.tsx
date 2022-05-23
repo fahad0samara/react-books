@@ -1,5 +1,7 @@
 import {useContext} from "react";
 import {themeContext} from "./Context";
+import Heroes from "./Data/Heroes";
+import Bookshelves from "./Data/Bookshelves";
 import Navbar from "./Navbar";
 import Section from "./page/Section";
 function App() {
@@ -16,6 +18,8 @@ function App() {
     >
       <Navbar />
       <Section />
+      <Heroes />
+      <Bookshelves/>
     </div>
   );
 }

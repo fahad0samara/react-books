@@ -14,7 +14,7 @@ import "swiper/css";
 
 // import required modules
 import { Autoplay } from "swiper";
-import Navbar from '../Navbar'
+
 const section = () => {
   return (
       <div>
