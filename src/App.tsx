@@ -16,7 +16,7 @@ function App() {
         color: darkMode ? "white" : "",
       }}
     >
-      <Navbar />
+      <Navbar  />
       <Section />
       <Heroes />
       <Bookshelves/>

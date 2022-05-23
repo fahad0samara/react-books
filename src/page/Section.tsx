@@ -42,7 +42,7 @@ const section = () => {
                       <div className="relative py-28  xl:mx-52 w-full  md:w-2/3 h-full flex flex-col justify-center items-center">
 
                           {/* ::Hero title & text */}
-                          <div className="    bg-opacity-80 p-10  rounded-xl md:rounded-r-none  bg-black  text-white shadow-2xl">
+                          <div className="    bg-opacity-80 p-10  rounded-xl md:rounded-r-none  gradient text-white shadow-2xl">
                               <h1 className="text-3xl sm:text-5xl font-josefin font-extrabold">Formidable, <br /><span className="text-yellow-400 text-opacity-80">Fancy Hero 8</span> est <br />Formidable !</h1>
                               <p className="mt-3 text-gray-100 font-firacode">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta blanditiis in asperiores optio est, id, temporibus perspiciatis ratione ipsam quam tempore aliquam distinctio repudiandae iusto facilis, consequatur eligendi illum quos.</p>
                           </div>

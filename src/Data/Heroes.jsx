@@ -28,7 +28,7 @@ const [data,setdata]=useState([]);
 }
 , [])
   return (
-    <div>
+    <div class='gradientt'>
       <h1 className=' text-4xl text-center'>Books about heroes</h1>
       <div className="grid grid-cols-1 md:grid-cols-2  m-5 gap-14">
         {dataForDisplay.map((item, index) => {
