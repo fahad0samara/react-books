@@ -6,6 +6,8 @@ import Childrens from "./Data/DAta1/Childrens";
 import Amazon from "./Data/Amazon";
 import Navbar from "./Navbar";
 import Section from "./page/Section";
+import About from "./page/About";
+import Footer from "./Footer";
 function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -20,10 +22,14 @@ function App() {
     >
       <Navbar  />
       <Section />
+      <About/>
+      <Amazon/>
+      <Childrens/>
       <Heroes />
       <Bookshelves/>
-      <Childrens/>
-      <Amazon/>
+     <Footer/>
+     
+     
     </div>
   );
 }

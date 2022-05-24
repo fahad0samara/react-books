@@ -8,24 +8,24 @@ function Navbar() {
 
   return (
     <div>
-      <header className="gradient">
-        <div className={'container mx-auto flex flex-wrap p-2  flex-col md:flex-row items-center'}>
-          <a className={'flex title-font font-medium items-center  mb-4 md:mb-0'}>
+      <header className="bg-[#facc15]">
+        <div className={'container mx-auto flex flex-wrap  text-black  flex-col md:flex-row items-center'}>
+          <a className={'flex title-font font-medium text-center items-center  mb-4 md:mb-0'}>
 
-            <span className="ml-3 text-xl">Dark mood</span>
+            <span className="ml-3 p-1 text-2xl">F-books</span>
           </a>
-          <nav  className={'md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center'}>
-            <a className={'mr-5 hover:text-gray-900'}>First Link</a>
-            <a className={'mr-5 hover:text-gray-900'}>Second Link</a>
-            <a className={'mr-5 hover:text-gray-900'}>Third Link</a>
-            <a className={'mr-5 hover:text-gray-900'}>Fourth Link</a>
+          <nav className={'md:ml-auto md:mr-auto font-black text-2xl flex flex-wrap items-center  justify-center'}>
+            <a className={'mr-5 hover:text-white cursor-pointer transition-all'}>About</a>
+            <a className={'mr-5 hover:text-white cursor-pointer transition-all'}>content</a>
+            <a className={'mr-5 hover:text-white cursor-pointer transition-all'}>dashboard</a>
+
           </nav>
           <Darkmood />
-        
+
         </div>
       </header>
 
-      
+
     </div>
   );
 }
