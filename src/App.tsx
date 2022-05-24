@@ -2,7 +2,7 @@ import {useContext} from "react";
 import {themeContext} from "./Context";
 import Heroes from "./Data/Heroes";
 import Bookshelves from "./Data/Bookshelves";
-import Childrens from "./Data/Childrens";
+import Childrens from "./Data/DAta1/Childrens";
 import Amazon from "./Data/Amazon";
 import Navbar from "./Navbar";
 import Section from "./page/Section";

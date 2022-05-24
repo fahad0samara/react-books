@@ -8,9 +8,11 @@ const Datacat = (str, num) => {
 };
 const FatchData = ({item}) => {
   return (
-    <div class="flex gradient max-w-md  text-white shadow-lg rounded-lg overflow-hidden">
-                  <img src={item.cover} alt class="w-1/3 bg-cover"></img>
-                  <div class="w-2/3 p-4">
+    <div class=" ">
+      
+
+        <img src={item.cover} alt class=" bg-cover"></img>
+                  <div class=" p-4">
                     <h1 class=" font-bold text-2xl">
                      {item.name}
                     </h1>
@@ -57,7 +59,11 @@ const FatchData = ({item}) => {
                       Go to the site</a>
                     
                     </div>
-                  </div>
+                  
+      
+      </div>
+      
+                 
                 </div>
   );
 };

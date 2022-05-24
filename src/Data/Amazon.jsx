@@ -1,20 +1,13 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
+
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFlip, Pagination, Navigation } from "swiper";
-
-// Import Swiper styles
-
-
+import { EffectCoverflow, Pagination ,Autoplay,Navigation  } from "swiper";
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-flip";
+import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import "swiper/css/navigation";;
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import FatchData  from "./FatchData ";
 
 
@@ -26,8 +19,7 @@ const HotNews = () => {
     return str;
   }
   const [data,setdata]=useState([]);
-  const [expanded, setExpanded] = useState(false);
-  const dataForDisplay = expanded ? data : data.slice(0, 4);
+
 
   useEffect(() => {
     const check = localStorage.getItem("data2");
@@ -63,33 +55,48 @@ console.log(response.data,'YYY');
 
   return (
     <div className="">
-     
-     <div className="grid grid-cols-1 md:grid-cols-2   m-5 gap-14">
-     
+     <Swiper
+       autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination,Autoplay, Navigation ]}
+        className="mySwiper"
+      >
         
-            {dataForDisplay && dataForDisplay.map((item, index) => {
+     <div className="">
+     
+            {data && data.map((item, index) => {
               return (
-
+                <SwiperSlide>
            
                  
                   <FatchData  className=' ' key={index} item={item}/>
             
-              
+                  </SwiperSlide>
               )
-            
+              
             
             })}
-           <button
-          className="bn47 md:ml-60   drop-shadow-2xl text-center font-black text-2xl w-40 h-20  m-10 "
-          type="button"
-          onClick={() => setExpanded(!expanded)}
-        >
-          {expanded ? "Show Less" : "show More"}
-        </button>
+              
+          
           
       
       </div>
-    
+      </Swiper>
+      
     </div>
   );
 };
